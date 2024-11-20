@@ -18,7 +18,10 @@ if id "tp3" >/dev/null 2>&1; then
 else 
     echo " ERROR : tp3 exsite deja "
 fi
-
+# 4. Éviter la création de répertoire déjà existant.
+# 6. Utilisez la commande ip pour trouver l’adresse ip de la carte réseau.
+# Pour exécuter le script, vous devez donner les permissions d’exécution sur le fichier et l’exécuter en utilisant la commande bash.
+# Si vous avez réussi à créer le script et à l exécuter correctement, vous devriez voir afficher le contenu du fichier message.txt dans la sortie de terminal
 
 
 
