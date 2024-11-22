@@ -4,7 +4,7 @@ read -p "Entrez le nom du dépôt (ex : repoTP3) : " nom_repo
 read -p "Entrez le nom du dossier à créer (ex : dossierCréé) : " nom_dossier
 
 if id "$nom_projet" >/dev/null 2>&1; then
-    if [ -d /home/$nom_repo/ ]; then
+    if [[ -d /home/$nom_repo/ ]]; then
         sudo adduser $nom_projet --home /home/$nom_repo/
         mkdir /home/$nom_repo/$nom_dossier
         sudo chmod 770 /home/$nom_repo/$nom_dossier
