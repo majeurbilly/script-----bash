@@ -4,11 +4,11 @@ read -p "Entrez le nom du dépôt (ex : repoTP3) : " NOM_REPO
 read -p "Entrez le nom du dossier à créer (ex : dossierCréé) : " NOM_DOSSSIER
 
 if id "$USER_NAME" >/dev/null 2>&1; then
-    echo " ERROR : $USER_NAME exsite deja "
+    echo "ERROR : L'utilisateur $USER_NAME existe déjà."
     exit 1
 fi
 if [[ -d "/home/$NOM_REPO" ]]; then
-    echo " ERROR : $NOM_REPO deja exsitant "
+    echo "ERROR : Le répertoire $NOM_REPO existe déjà."
     exit 1
 fi
 
