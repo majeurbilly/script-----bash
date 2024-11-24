@@ -24,4 +24,4 @@ elif [[ "$ROUTE_NORD" -lt "$NB_KM_ROUTE_RAPIDE" ]]; then
   NB_KM_ROUTE_RAPIDE="$ROUTE_NORD"
   STRING_ROUTE_RAPIDE="au nord"
 fi
-echo "La route la plus courte est "$STRING_ROUTE_RAPIDE", avec une distance de "$NB_KM_ROUTE_RAPIDE" M."
+echo "La route la plus courte est ""$STRING_ROUTE_RAPIDE"", avec une distance de ""$NB_KM_ROUTE_RAPIDE"" M."

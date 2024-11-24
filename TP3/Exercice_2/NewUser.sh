@@ -1,7 +1,7 @@
 #!/bin/bash
-read -r -p "Entrez le nom du USER (ex : tp3) : " USER_NAME
-read -r -p "Entrez le nom du dépôt (ex : repoTP3) : " NOM_REPO
-read -r -p "Entrez le nom du dossier à créer (ex : dossierCréé) : " NOM_DOSSSIER
+USER_NAME=$(read -r -p "Entrez le nom du USER (ex : tp3) : ")
+NOM_REPO=$(read -r -p "Entrez le nom du dépôt (ex : repoTP3) : ")
+NOM_DOSSSIER=$(read -r -p "Entrez le nom du dossier à créer (ex : dossierCréé) : ")
 
 if id "$USER_NAME" >/dev/null 2>&1; then
     echo " ERROR : $USER_NAME exsite deja "
