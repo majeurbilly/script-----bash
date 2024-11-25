@@ -9,7 +9,7 @@ if [[ -z "$USER_NAME" || -z "$NOM_REPO" || -z "$NOM_DOSSIER" ]]; then
   exit 1
 
 else
-  echo -e "Nom d'utilisateur : $USER_NAME\nNom du répertoire : $NOM_REPO\nNom du dossier créé : $NOM_DOSSIER"
+  echo -e "Nom d'utilisateur : ""$USER_NAME""\nNom du répertoire : ""$NOM_REPO""\nNom du dossier créé : ""$NOM_DOSSIER"""
 fi
 
 if id "$USER_NAME" >/dev/null 2>&1; then
@@ -27,8 +27,8 @@ mkdir /home/"$NOM_REPO"/"$NOM_DOSSIER"
 sudo chown "$USER_NAME":"$USER_NAME" /home/"$NOM_REPO"/"$NOM_DOSSIER"
 sudo chmod 770 /home/"$NOM_REPO"/"$NOM_DOSSIER"
 echo "Bienvenue au TP3" > /home/"$NOM_REPO"/"$NOM_DOSSIER"/message.txt
-cat /home/"$NOM_REPO"/"$NOM_DOSSIER"/message.txt
 clear
+cat /home/"$NOM_REPO"/"$NOM_DOSSIER"/message.txt
 echo "Bienvenue $USER_NAME sur ton nouveau poste de travail."
 echo "Votre répertoire de travail se nomme $NOM_DOSSIER."
 echo "Adresse IP : $(hostname -I)"
