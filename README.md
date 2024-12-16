@@ -208,5 +208,13 @@ echo "La route la plus courte est $STRING_ROUTE_RAPIDE, avec une distance de $NB
 
 ---
 
-### **11
+### **11. Résumé rapide des conditions**
+| **Condition**                | **Syntaxe**                        |
+|------------------------------|------------------------------------|
+| Si vide                      | [[ -z "$VAR" ]]                 |
+| Si répertoire existe         | [[ -d "/chemin/rep" ]]          |
+| Si fichier existe            | [[ -f "/chemin/fichier" ]]      |
+| Comparaison numérique        | [[ "$a" -lt "$b" ]]             |
+
+
 
